@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/relativelistitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:background="@drawable/boundary">
+
+
+    <ImageView
+
+        android:id="@+id/icon"
+        android:background="@color/sunset"
+        android:padding="1dp"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:layout_width="60dp"
+        android:layout_marginLeft="16dp"
+        android:adjustViewBounds="true"
+        android:layout_marginRight="12dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/firstLine"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginRight="8dp"
+        android:text="Description"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/secondline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sunset"
+        android:maxLines="2"
+        android:text="Example application"
+        android:textSize="12sp"
+        android:layout_below="@+id/firstLine"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toEndOf="@+id/icon" />
+
+</RelativeLayout>

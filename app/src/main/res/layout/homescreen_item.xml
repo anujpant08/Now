@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    >
+
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_marginTop="18dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
+
+<RelativeLayout
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+
+        android:id="@+id/firstpane"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/boundary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/firstimage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/boundary"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/tint"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/gradient"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop" />
+
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:id="@+id/share"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_action_share_pink" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/newsrel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@id/cardview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/firsttext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:background="@color/transparent"
+            android:textColor="@color/almostblack"
+            android:padding="5dp"
+            android:textSize="22sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/destext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_below="@id/firsttext"
+            android:background="@color/transparent"
+            android:textColor="@color/almostblack"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:id="@+id/authortext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author   | "
+            android:padding="3dp"
+            android:visibility="invisible"
+            android:layout_below="@id/destext"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:textColor="#c2185b"
+            android:textStyle="italic"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/newssource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source"
+            android:layout_below="@id/destext"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:maxLines="1"
+            android:background="@color/white"
+            android:textColor="#c2185b"
+            android:textStyle="italic"
+            android:textSize="12sp"/>
+
+
+        <!--<ImageView
+            android:id="@+id/readtick"
+            android:visibility="gone"
+            android:layout_width="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="18dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_action_accept_pink"/> -->
+
+        <!--<TextView
+            android:id="@+id/destext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/authortext"
+            android:text="Des"
+            android:padding="3dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/almostblack"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="14sp"/> -->
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/newsrel"
+        android:background="#969696">
+
+    </View>
+
+</RelativeLayout>
+
+
+
+
+

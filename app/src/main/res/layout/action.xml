@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:id="@+id/actionbar"
+    android:orientation="horizontal"
+    android:background="@color/sunset"
+    android:alpha="0.4">
+
+</android.support.v7.widget.Toolbar>
