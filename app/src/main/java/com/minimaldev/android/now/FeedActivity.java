@@ -55,7 +55,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import static android.R.attr.src;
 import static android.os.Build.VERSION_CODES.M;
 import static com.minimaldev.android.now.GridActivity.set;
 
@@ -258,7 +257,7 @@ public class FeedActivity extends AppCompatActivity {
                         return  true;
                    // arr.add(i, receiveString);
 
-=                    // Toast.makeText(GridActivity.this, "" + receiveString,
+                    // Toast.makeText(GridActivity.this, "" + receiveString,
                     //Toast.LENGTH_SHORT).show();
 
                 }

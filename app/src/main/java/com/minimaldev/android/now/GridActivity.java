@@ -40,12 +40,14 @@ import static com.minimaldev.android.now.R.layout.select;
  * Created by ANUJ on 28/06/2017.
  */
 
+//******NOW*******
+
 public class GridActivity extends AppCompatActivity {
 
 
     String path;
 
-    public static Set<String> set;
+    public static Set<String> set,set1;
 
     ArrayList<String> arrayList;
 
