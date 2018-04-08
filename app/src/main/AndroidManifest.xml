@@ -43,8 +43,7 @@
         </activity>
 
         <activity android:name=".DialogArticle"
-            android:theme="@style/Theme.CustomTranslucent"
-            android:screenOrientation="portrait">
+            android:theme="@style/Theme.CustomTranslucent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

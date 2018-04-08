@@ -55,6 +55,7 @@ public class DialogArticle extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         arrayList=new ArrayList<>();
 
         articlesList = new ArrayList<>();
